@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">YFY孝币</string>
     <string name="balance">Balance</string>
-    <string name="title_send">Send</string>
+    <string name="title_send">ETH</string>
     <string name="title_request">My Address</string>
     <string name="title_import">Import Wallet</string>
     <string name="title_create">Create</string>
@@ -96,7 +96,7 @@
     <string name="title_terms">Terms and Conditions</string>
     <string name="title_version">Version</string>
     <string name="title_activity_token_list">Tokens</string>
-    <string name="title_tokens">My Tokens</string>
+    <string name="title_tokens">YFT孝币</string>
     <string name="prompt_private_key">Private key</string>
     <string name="error_import_private_key">Error importing private key</string>
     <string name="message_importing_private_key">Importing private key. One moment.</string>

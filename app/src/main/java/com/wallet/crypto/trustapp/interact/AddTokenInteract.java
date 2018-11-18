@@ -1,9 +1,12 @@
 package com.wallet.crypto.trustapp.interact;
 
+import com.wallet.crypto.trustapp.entity.Token;
+import com.wallet.crypto.trustapp.entity.Wallet;
 import com.wallet.crypto.trustapp.repository.TokenRepositoryType;
 import com.wallet.crypto.trustapp.repository.WalletRepositoryType;
 
 import io.reactivex.Completable;
+import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 
 public class AddTokenInteract {
@@ -22,5 +25,14 @@ public class AddTokenInteract {
                 .flatMapCompletable(wallet -> tokenRepository
                         .addToken(wallet, address, symbol, decimals)
                         .observeOn(AndroidSchedulers.mainThread()));
+    }
+
+    public long count(Wallet wallet) {
+        Observable<Token[]> ret = tokenRepository.fetch(wallet.address);
+        if (ret != null && !ret.isEmpty().blockingGet()) {
+            return ret.count().blockingGet();
+        } else {
+            return 0;
+        }
     }
 }

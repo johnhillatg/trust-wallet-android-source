@@ -73,7 +73,7 @@ public class SendActivity extends BaseActivity {
         symbol = symbol == null ? C.ETH_SYMBOL : symbol;
         sendingTokens = getIntent().getBooleanExtra(C.EXTRA_SENDING_TOKENS, false);
 
-        setTitle(getString(R.string.title_send) + " " + symbol);
+        setTitle(getString(R.string.title_send) /*+ " " + symbol*/);
         amountInputLayout.setHint(getString(R.string.hint_amount) + " " + symbol);
 
         // Populate to address if it has been passed forward

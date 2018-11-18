@@ -65,62 +65,62 @@ public class SettingsFragment extends PreferenceFragment
             return false;
         });
         String versionString = getVersion();
-        Preference version = findPreference("pref_version");
-        version.setSummary(versionString);
+//        Preference version = findPreference("pref_version");
+//        version.setSummary(versionString);
         SharedPreferences preferences = PreferenceManager
                 .getDefaultSharedPreferences(getActivity());
         preferences
                 .registerOnSharedPreferenceChangeListener(SettingsFragment.this);
-        final Preference rate = findPreference("pref_rate");
-        rate.setOnPreferenceClickListener(preference -> {
-            rateThisApp();
-            return false;
-        });
+//        final Preference rate = findPreference("pref_rate");
+//        rate.setOnPreferenceClickListener(preference -> {
+//            rateThisApp();
+//            return false;
+//        });
 
-        final Preference twitter = findPreference("pref_twitter");
-        twitter.setOnPreferenceClickListener(preference -> {
-            Intent intent;
-            try {
-                // get the Twitter app if possible
-                getActivity().getPackageManager().getPackageInfo("com.twitter.android", 0);
-                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id=911011433147654144"));
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            } catch (Exception e) {
-                // no Twitter app, revert to browser
-                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/trustwalletapp"));
-            }
-            startActivity(intent);
-            return false;
-        });
+//        final Preference twitter = findPreference("pref_twitter");
+//        twitter.setOnPreferenceClickListener(preference -> {
+//            Intent intent;
+//            try {
+//                // get the Twitter app if possible
+//                getActivity().getPackageManager().getPackageInfo("com.twitter.android", 0);
+//                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id=911011433147654144"));
+//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            } catch (Exception e) {
+//                // no Twitter app, revert to browser
+//                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/trustwalletapp"));
+//            }
+//            startActivity(intent);
+//            return false;
+//        });
 
-        final Preference facebook = findPreference("pref_facebook");
-        facebook.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/trustwalletapp"));
-            startActivity(intent);
-            return false;
-        });
+//        final Preference facebook = findPreference("pref_facebook");
+//        facebook.setOnPreferenceClickListener(preference -> {
+//            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/trustwalletapp"));
+//            startActivity(intent);
+//            return false;
+//        });
 
-        final Preference donate = findPreference("pref_donate");
-        donate.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(getActivity(), SendActivity.class);
-            intent.putExtra(C.EXTRA_ADDRESS, C.DONATION_ADDRESS);
-            startActivity(intent);
-            return true;
-        });
+//        final Preference donate = findPreference("pref_donate");
+//        donate.setOnPreferenceClickListener(preference -> {
+//            Intent intent = new Intent(getActivity(), SendActivity.class);
+//            intent.putExtra(C.EXTRA_ADDRESS, C.DONATION_ADDRESS);
+//            startActivity(intent);
+//            return true;
+//        });
 
-        final Preference email = findPreference("pref_email");
-        email.setOnPreferenceClickListener(preference -> {
-
-            Intent mailto = new Intent(Intent.ACTION_SENDTO);
-            mailto.setType("message/rfc822"); // use from live device
-            mailto.setData(Uri.parse("mailto:support@trustwalletapp.com")
-                    .buildUpon()
-                    .appendQueryParameter("subject", "Android support question")
-                    .appendQueryParameter("body", "Dear Trust support,")
-                    .build());
-            startActivity(Intent.createChooser(mailto, "Select email application."));
-            return true;
-        });
+//        final Preference email = findPreference("pref_email");
+//        email.setOnPreferenceClickListener(preference -> {
+//
+//            Intent mailto = new Intent(Intent.ACTION_SENDTO);
+//            mailto.setType("message/rfc822"); // use from live device
+//            mailto.setData(Uri.parse("mailto:support@trustwalletapp.com")
+//                    .buildUpon()
+//                    .appendQueryParameter("subject", "Android support question")
+//                    .appendQueryParameter("body", "Dear Trust support,")
+//                    .build());
+//            startActivity(Intent.createChooser(mailto, "Select email application."));
+//            return true;
+//        });
     }
 
     private void rateThisApp() {

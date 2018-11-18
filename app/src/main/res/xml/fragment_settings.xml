@@ -16,92 +16,92 @@
             android:icon="@mipmap/settings_server"
             android:dialogTitle="@string/network_label" />
 
-        <PreferenceCategory
-            android:title="@string/title_opensource"
-            android:key="pref_opensource_links" >
+        <!--<PreferenceCategory-->
+            <!--android:title="@string/title_opensource"-->
+            <!--android:key="pref_opensource_links" >-->
 
-            <Preference
-                android:title="@string/title_source_code"
-                android:icon="@mipmap/settings_open_source">
-                <intent android:action="android.intent.action.VIEW"
-                    android:data="https://github.com/TrustWallet/trust-wallet-android" />
-            </Preference>
+            <!--<Preference-->
+                <!--android:title="@string/title_source_code"-->
+                <!--android:icon="@mipmap/settings_open_source">-->
+                <!--<intent android:action="android.intent.action.VIEW"-->
+                    <!--android:data="https://github.com/TrustWallet/trust-wallet-android" />-->
+            <!--</Preference>-->
 
-            <Preference android:title="@string/title_report_bug"
-                        android:icon="@mipmap/settings_bug">
-                <intent android:action="android.intent.action.VIEW"
-                    android:data="https://github.com/TrustWallet/trust-wallet-android/issues/new" />
-            </Preference>
+            <!--<Preference android:title="@string/title_report_bug"-->
+                        <!--android:icon="@mipmap/settings_bug">-->
+                <!--<intent android:action="android.intent.action.VIEW"-->
+                    <!--android:data="https://github.com/TrustWallet/trust-wallet-android/issues/new" />-->
+            <!--</Preference>-->
 
-        </PreferenceCategory>
+        <!--</PreferenceCategory>-->
 
-        <PreferenceCategory
-            android:title="@string/title_community"
-            android:key="pref_community_links" >
+        <!--<PreferenceCategory-->
+            <!--android:title="@string/title_community"-->
+            <!--android:key="pref_community_links" >-->
 
-            <Preference
-                android:key="pref_twitter"
-                android:title="@string/twitter"
-                android:icon="@mipmap/settings_twitter">
+            <!--<Preference-->
+                <!--android:key="pref_twitter"-->
+                <!--android:title="@string/twitter"-->
+                <!--android:icon="@mipmap/settings_twitter">-->
 
-            </Preference>
+            <!--</Preference>-->
 
-            <Preference
-                android:title="@string/telegram"
-                android:icon="@mipmap/settings_telegram">
-                <intent android:action="android.intent.action.VIEW"
-                    android:data="https://t.me/joinchat/AAMtrQ_wtd918mm_mU0BRQ" />
-            </Preference>
+            <!--<Preference-->
+                <!--android:title="@string/telegram"-->
+                <!--android:icon="@mipmap/settings_telegram">-->
+                <!--<intent android:action="android.intent.action.VIEW"-->
+                    <!--android:data="https://t.me/joinchat/AAMtrQ_wtd918mm_mU0BRQ" />-->
+            <!--</Preference>-->
 
-            <Preference
-                android:key="pref_facebook"
-                android:title="@string/facebook"
-                android:icon="@drawable/ic_facebook">
+            <!--<Preference-->
+                <!--android:key="pref_facebook"-->
+                <!--android:title="@string/facebook"-->
+                <!--android:icon="@drawable/ic_facebook">-->
 
-            </Preference>
-        </PreferenceCategory>
+            <!--</Preference>-->
+        <!--</PreferenceCategory>-->
 
-        <PreferenceCategory
-            android:title="@string/title_support"
-            android:key="pref_support"
-            >
+        <!--<PreferenceCategory-->
+            <!--android:title="@string/title_support"-->
+            <!--android:key="pref_support"-->
+            <!--&gt;-->
 
-            <Preference
-                android:key="pref_rate"
-                android:icon="@mipmap/settings_rating"
-                android:title="@string/title_rate" />
+            <!--<Preference-->
+                <!--android:key="pref_rate"-->
+                <!--android:icon="@mipmap/settings_rating"-->
+                <!--android:title="@string/title_rate" />-->
 
-            <Preference
-                android:key="pref_email"
-                android:icon="@mipmap/settings_email"
-                android:title="@string/title_email" />
+            <!--<Preference-->
+                <!--android:key="pref_email"-->
+                <!--android:icon="@mipmap/settings_email"-->
+                <!--android:title="@string/title_email" />-->
 
-            <Preference
-                android:key="pref_donate"
-                android:icon="@mipmap/settings_donate"
-                android:title="@string/title_donate">
-            </Preference>
+            <!--<Preference-->
+                <!--android:key="pref_donate"-->
+                <!--android:icon="@mipmap/settings_donate"-->
+                <!--android:title="@string/title_donate">-->
+            <!--</Preference>-->
 
-            <Preference
-                android:title="@string/title_privacy_policy"
-                android:icon="@mipmap/settings_privacy_policy">
-                <intent android:action="android.intent.action.VIEW"
-                    android:data="https://trustwalletapp.com/privacy-policy.html" />
-            </Preference>
+            <!--<Preference-->
+                <!--android:title="@string/title_privacy_policy"-->
+                <!--android:icon="@mipmap/settings_privacy_policy">-->
+                <!--<intent android:action="android.intent.action.VIEW"-->
+                    <!--android:data="https://trustwalletapp.com/privacy-policy.html" />-->
+            <!--</Preference>-->
 
-            <Preference
-                android:title="@string/title_terms"
-                android:icon="@mipmap/settings_terms">
-                <intent android:action="android.intent.action.VIEW"
-                    android:data="https://trustwalletapp.com/terms.html" />
-            </Preference>
+            <!--<Preference-->
+                <!--android:title="@string/title_terms"-->
+                <!--android:icon="@mipmap/settings_terms">-->
+                <!--<intent android:action="android.intent.action.VIEW"-->
+                    <!--android:data="https://trustwalletapp.com/terms.html" />-->
+            <!--</Preference>-->
 
-            <Preference
-                android:title="@string/title_version"
-                android:key="pref_version"
-                android:iconSpaceReserved="true">
-            </Preference>
+            <!--<Preference-->
+                <!--android:title="@string/title_version"-->
+                <!--android:key="pref_version"-->
+                <!--android:iconSpaceReserved="true">-->
+            <!--</Preference>-->
 
-        </PreferenceCategory>
+        <!--</PreferenceCategory>-->
 
 </PreferenceScreen>

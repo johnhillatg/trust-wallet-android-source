@@ -4,6 +4,7 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 
+import com.wallet.crypto.trustapp.entity.Wallet;
 import com.wallet.crypto.trustapp.interact.AddTokenInteract;
 import com.wallet.crypto.trustapp.interact.FindDefaultWalletInteract;
 import com.wallet.crypto.trustapp.router.MyTokensRouter;
@@ -45,5 +46,9 @@ public class AddTokenViewModel extends BaseViewModel {
                 .find()
                 .subscribe(w -> myTokensRouter.open(context, w));
 
+    }
+
+    public long count(Wallet wallet) {
+        return addTokenInteract.count(wallet);
     }
 }
